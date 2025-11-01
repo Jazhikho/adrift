@@ -1,0 +1,52 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+*.import
+export_presets.cfg
+*.tmp
+*.log
+
+# Build artifacts
+*.exe
+*.pck
+*.app
+*.apk
+*.aab
+*.ipa
+*.appx
+*.appxbundle
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.bak
+*.backup
+*.tmp
+*.temp
+*.cache
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# User-specific files (optional - uncomment if needed)
+# user://
