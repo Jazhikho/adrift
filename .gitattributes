@@ -1,6 +1,5 @@
 # Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
-
 # Large binary files - treat as binary and use Git LFS if needed
 # Image formats (textures)
 *.png binary
@@ -12,7 +11,6 @@
 *.hdr binary
 *.psd binary
 *.webp binary
-
 # 3D Model formats
 *.fbx binary
 *.obj binary
@@ -24,20 +22,17 @@
 *.max binary
 *.ma binary
 *.mb binary
-
 # Audio formats
-*.wav binary
+*.wav filter=lfs diff=lfs merge=lfs -text
 *.mp3 binary
 *.ogg binary
 *.flac binary
 *.aac binary
-
 # Video formats
 *.mp4 binary
 *.mov binary
 *.avi binary
 *.mkv binary
-
 # Archives and compressed files
 *.zip binary
 *.rar binary
