@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=3 uid="uid://dovv5rfadfx8g"]
+
+[ext_resource type="PackedScene" uid="uid://b8k7nax2n4h5p" path="res://Scenes/Player/Player.tscn" id="1_mkdwo"]
+[ext_resource type="PackedScene" uid="uid://c4pnrqdm2h4mw" path="res://Tests/ScriptTester.tscn" id="2_o7a6y"]
+[ext_resource type="Script" uid="uid://c4o1fmt6bhgkt" path="res://Tests/UITest.gd" id="3_mj2d6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o7a6y"]
+sky_top_color = Color(0.5, 0.7, 0.9, 1)
+sky_horizon_color = Color(0.428169, 0.7093207, 0.73379946, 1)
+
+[sub_resource type="Sky" id="Sky_mj2d6"]
+sky_material = SubResource("ProceduralSkyMaterial_o7a6y")
+
+[sub_resource type="Environment" id="Environment_jlyc7"]
+background_mode = 2
+sky = SubResource("Sky_mj2d6")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nry2v"]
+size = Vector2(20, 20)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ohrcf"]
+
+[node name="TestEnvironment" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jlyc7")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("PlaneMesh_nry2v")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("WorldBoundaryShape3D_ohrcf")
+
+[node name="Player" parent="." instance=ExtResource("1_mkdwo")]
+
+[node name="SurvivalSystemTest" parent="." instance=ExtResource("2_o7a6y")]
+
+[node name="UITest" type="Node" parent="."]
+script = ExtResource("3_mj2d6")

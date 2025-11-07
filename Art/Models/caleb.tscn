@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://daoukynx6y4i0"]
+
+[ext_resource type="PackedScene" uid="uid://cjgym7xvpuum1" path="res://Art/Models/caleb.glb" id="1_bnx4v"]
+
+[node name="caleb" instance=ExtResource("1_bnx4v")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="PlayerRig" parent="." index="0"]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 3.821371e-15, 8.742278e-08, -1, -8.742278e-08, -1, -8.742278e-08, 0, 0, 0)

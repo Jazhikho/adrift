@@ -156,11 +156,13 @@ Auto-save each dawn. One slot; death wipes save.
 
 ## License
 
-Free jam build.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## References
 
-- [Game Design Document](./Adrift_Echoes_GDD.md)
+- [Game Design Document](./Docs/Adrift_Echoes_GDD.md)
+- [Development Plan](./Docs/DevelopmentPlan.md)
+- [Survival System Documentation](./Docs/SurvivalSystem.md)
 
 ---
 

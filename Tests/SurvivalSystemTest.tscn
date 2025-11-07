@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4pnrqdm2h4mw"]
-
-[ext_resource type="Script" path="res://Tests/SurvivalSystemTest.gd" id="1"]
-
-[node name="SurvivalSystemTest" type="Node"]
-script = ExtResource("1")
-
