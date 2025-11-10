@@ -48,5 +48,20 @@ $RECYCLE.BIN/
 logs/
 *.log.*
 
+# Addons (managed externally, keep out of repo)
+addons/
+
+# Example and test assets
+**/example/
+**/examples/
+**/Example/
+**/Examples/
+**/test/
+**/tests/
+**/Test/
+**/Tests/
+*.example.*
+*.test.*
+
 # User-specific files (optional - uncomment if needed)
 # user://

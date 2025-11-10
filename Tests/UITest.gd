@@ -46,7 +46,7 @@ func _ready() -> void:
 
 func _setup_ui() -> void:
 	# Load and instantiate UI
-	var ui_scene: PackedScene = preload("res://UI.tscn")
+	var ui_scene: PackedScene = preload("res://Scenes/UI/UI.tscn")
 	ui = ui_scene.instantiate()
 	add_child(ui)
 

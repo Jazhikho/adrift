@@ -46,7 +46,7 @@ This document provides a comprehensive step-by-step plan for bringing *Adrift: E
 - [x] Implement first-person camera with mouse look
 - [x] Add WASD movement controls
 - [ ] Implement head-bob (basic version, raft sync pending)
-- [ ] Add limited pitch to prevent motion sickness
+- [x] ✓ Add limited pitch to prevent motion sickness
 - [ ] Configure camera smoothing and sensitivity
 - [ ] Add camera sway based on raft tilt
 
@@ -58,11 +58,11 @@ This document provides a comprehensive step-by-step plan for bringing *Adrift: E
 - [x] ✓ Test player movement in empty scene
 
 ### 2.3 Interaction System
-- [ ] Create `Interactable.gd` base class/interface
+- [x] ✓ Create `Interactable.gd` base class/interface
 - [ ] Implement interaction detection (raycast)
-- [ ] Add interaction prompt UI
+- [x] ✓ Add interaction prompt UI
 - [ ] Create `InteractionManager.gd` to handle interactions
-- [ ] Implement E key binding via Input Map
+- [x] ✓ Implement E key binding via Input Map
 - [ ] Add interaction feedback (visual/audio)
 
 ---
@@ -139,9 +139,9 @@ This document provides a comprehensive step-by-step plan for bringing *Adrift: E
 ## Phase 5: Inventory & Items
 
 ### 5.1 Item System
-- [ ] Create `Item.gd` Resource class
-- [ ] Define item types (consumables, tools, special)
-- [ ] Add item properties (hunger_value, thirst_value, etc.)
+- [x] ✓ Create `Item.gd` Resource class
+- [x] ✓ Define item types (consumables, tools, special)
+- [x] ✓ Add item properties (hunger_value, thirst_value, etc.)
 - [ ] Create item data resources in `Resources/Data/`
 
 ### 5.2 Inventory System

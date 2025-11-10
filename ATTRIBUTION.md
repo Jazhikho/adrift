@@ -37,6 +37,22 @@
 
 ---
 
+## Plugins
+
+**Boujie Water Shader**
+- **Author:** Zach Bernal (Chrisknyfe)
+- **License:** MIT License (see `addons/boujie_water_shader/LICENSE.md`)
+- **Usage:** Ocean rendering, water materials, and related editor tools
+- **Source:** https://github.com/Chrisknyfe/boujie_water_shader
+
+**Godot Weather System**
+- **Author:** Matias Lavik
+- **License:** MIT License
+- **Usage:** Weather controller nodes, resources, and sample content
+- **Source:** https://github.com/matiaslavik/GodotWeatherSystem
+
+---
+
 ## License Notes
 
 - **CC0 (Creative Commons Zero):** Public domain dedication - free to use for any purpose without attribution requirements
@@ -47,5 +63,5 @@
 
 *This document will be updated as additional assets are added to the project.*
 
-**Last Updated:** November 2025
+**Last Updated:** November 2025 (Weather system now replaces previous day/night addon)
 

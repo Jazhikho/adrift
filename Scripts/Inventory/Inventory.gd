@@ -12,7 +12,7 @@ signal item_selected(item: InventoryItem)
 @onready var use_button: Button = $InventoryPanel/VBoxContainer/ActionContainer/UseButton
 @onready var close_button: Button = $InventoryPanel/VBoxContainer/HeaderContainer/CloseButton
 
-const INVENTORY_SLOT_SCENE: PackedScene = preload("res://ui/InventorySlot.tscn")
+const INVENTORY_SLOT_SCENE: PackedScene = preload("res://Scenes/UI/InventorySlot.tscn")
 const GRID_SIZE: int = 24
 
 var selected_slot: InventorySlot
