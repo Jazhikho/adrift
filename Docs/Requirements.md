@@ -19,6 +19,9 @@ The following addons must be present in `addons/` and enabled via the Godot proj
 - **Godot Weather System** (`addons/GodotWeatherSystem`)  
   Provides configurable weather presets, seasonal variation data, and runtime controllers used to drive both visual and gameplay weather effects.
 
+- **Terrain3D** (`addons/terrain_3d`)  
+  Adds high-performance, editable terrain support backed by a GDExtension, enabling large-scale landmasses, sculpting workflows, and multi-LOD rendering for shoreline and island content.
+
 ## Tooling Requirements
 
 - Godot Engine 4.2 or newer with Mono support (for integrated C# scripts bundled with third-party addons).

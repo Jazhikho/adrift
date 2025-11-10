@@ -1,7 +1,7 @@
 # Development Plan: Adrift: Echoes
 
 **Version:** 1.0  
-**Last Updated:** November 2025  
+**Last Updated:** November 2025 (Terrain3D + ocean/weather integration pass)  
 **Status:** Active Development
 
 ---
@@ -67,34 +67,39 @@ This document provides a comprehensive step-by-step plan for bringing *Adrift: E
 
 ---
 
-## Phase 3: Ocean & Environment
+## Phase 3: Ocean & Environment 🔄
 
-### 3.1 Ocean Shader
-- [ ] Create `OceanShader.gdshader`
-- [ ] Implement procedural wave generation using noise
-- [ ] Add wave height variation based on weather
-- [ ] Add wave movement/animation
-- [ ] Implement color transitions (day/night, weather)
-- [ ] Add foam/whitecap effects
-- [ ] Optimize for performance (LOD if needed)
+### 3.1 Boujie Water Shader Integration
+- [x] Add Boujie Water Shader addon to project
+- [x] Configure baseline wave, foam, and UV stacks in editor
+- [x] Cache base wave parameters for runtime modulation
+- [x] Expose calm/storm intensity controls in Inspector
+- [ ] Drive raft buoyancy from shader wave outputs
+- [ ] Profile shader performance under storm settings
 
 ### 3.2 Ocean System
-- [ ] Create `OceanSystem.gd` script
-- [ ] Implement procedural ocean plane
-- [ ] Add wave height calculation based on weather/emotional state
-- [ ] Create ocean mesh generation (or use PlaneMesh with shader)
+- [x] Create `OceanWeatherBridge` to proxy weather into shader
+- [x] Smoothly interpolate wave intensity between calm/storm states
+- [x] Emit `wave_intensity_changed` signal for downstream systems
+- [ ] Build ocean surface Scene/Node setup around shader
 - [ ] Add infinite scrolling/illusion
 - [ ] Implement wave-to-player interaction (raft buoyancy)
 
-### 3.3 Weather System
-- [ ] Create `WeatherSystem.gd` script
-- [ ] Implement weather states (calm, storm, rain)
-- [ ] Add weather transitions
-- [ ] Connect weather to wave height
+### 3.3 Weather System Integration
+- [x] Connect C# WeatherController to `OceanWeatherBridge`
+- [x] Map cloud cover, fog density, and wind speed into wave intensity
+- [ ] Create Godot-side wrapper for weather presets
 - [ ] Add weather visual effects (rain particles, fog)
 - [ ] Implement weather audio mixing
 
-### 3.4 Day/Night Cycle
+### 3.4 Terrain Environment
+- [x] Import Terrain3D addon and binaries
+- [x] Prototype Terrain3D scene for shoreline/landmass testing
+- [ ] Define terrain authoring workflow (regions, sculpting, asset placement)
+- [ ] Integrate AmbientCG materials into terrain layers
+- [ ] Bake navigation/physics data from terrain as needed
+
+### 3.5 Day/Night Cycle
 - [ ] Create `DayNightCycle.gd` script
 - [ ] Implement time progression system
 - [ ] Add skybox rotation/color changes
@@ -467,7 +472,7 @@ This document provides a comprehensive step-by-step plan for bringing *Adrift: E
 ### Milestone 1: Vertical Slice (Current Target)
 - [x] ✓ Survival system complete
 - [ ] Player controller and movement
-- [ ] Basic ocean/wave system
+- [x] Basic ocean/wave system (Boujie shader + weather bridge prototype)
 - [ ] Simple raft physics
 - [ ] Basic UI (HUD, menus)
 - [ ] Debris spawning and collection

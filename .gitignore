@@ -62,6 +62,7 @@ addons/
 **/Tests/
 *.example.*
 *.test.*
+Tests/
 
-# User-specific files (optional - uncomment if needed)
-# user://
+# User-specific files
+/Resources/Materials

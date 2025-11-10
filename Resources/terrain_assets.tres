@@ -1,0 +1,111 @@
+[gd_resource type="Terrain3DAssets" load_steps=36 format=3 uid="uid://casiugw444434"]
+
+[ext_resource type="Texture2D" uid="uid://bvt0u8kwn11lh" path="res://Art/Materials/ground048_packed_albedo_height.png" id="1_kbxxf"]
+[ext_resource type="Texture2D" uid="uid://chutxcmnwak6q" path="res://Art/Materials/ground048_packed_normal_roughness.png" id="2_dcted"]
+[ext_resource type="Texture2D" uid="uid://bvoich3wejmio" path="res://Art/Materials/ground054_packed_albedo_height.png" id="3_yjccd"]
+[ext_resource type="Texture2D" uid="uid://cojiyu8yxbh4e" path="res://Art/Materials/ground054_packed_normal_roughness.png" id="4_mibhk"]
+[ext_resource type="Texture2D" uid="uid://dxx3j0osskpox" path="res://Art/Materials/ground055_packed_albedo_height.png" id="5_8qkr2"]
+[ext_resource type="Texture2D" uid="uid://2rlx34rnm1fa" path="res://Art/Materials/ground055_packed_normal_roughness.png" id="6_voyym"]
+[ext_resource type="Texture2D" uid="uid://brs64t6rbsyw0" path="res://Art/Materials/ground068_packed_albedo_height.png" id="7_chjpe"]
+[ext_resource type="Texture2D" uid="uid://dvlpcchsw4h47" path="res://Art/Materials/ground068_packed_normal_roughness.png" id="8_0dhbb"]
+[ext_resource type="Texture2D" uid="uid://d2um8xw23dfwk" path="res://Art/Materials/ground080_packed_albedo_height.png" id="9_ovkvm"]
+[ext_resource type="Texture2D" uid="uid://bqsnurobyqcag" path="res://Art/Materials/ground080_packed_normal_roughness.png" id="10_31vta"]
+[ext_resource type="Texture2D" uid="uid://booy7kxfej367" path="res://Art/Materials/ground092_packed_albedo_height.png" id="11_ss82l"]
+[ext_resource type="Texture2D" uid="uid://kjx83lcl64e2" path="res://Art/Materials/ground092_packed_normal_roughness.png" id="12_h6y1q"]
+[ext_resource type="Texture2D" uid="uid://c4f6jxwh3ii51" path="res://Art/Materials/ground096_packed_albedo_height.png" id="13_576p4"]
+[ext_resource type="Texture2D" uid="uid://dln3axm72bpym" path="res://Art/Materials/ground096_packed_normal_roughness.png" id="14_airtd"]
+[ext_resource type="Texture2D" uid="uid://dfyqees64eayw" path="res://Art/Materials/rock029_packed_albedo_height.png" id="15_hnw8y"]
+[ext_resource type="Texture2D" uid="uid://cgqcyf7jqrce1" path="res://Art/Materials/rock029_packed_normal_roughness.png" id="16_1mw5l"]
+[ext_resource type="Texture2D" uid="uid://d0ordk48ufxyo" path="res://Art/Materials/rock032_packed_albedo_height.png" id="17_gwui1"]
+[ext_resource type="Texture2D" uid="uid://bc1fd1k231eds" path="res://Art/Materials/rock032_packed_normal_roughness.png" id="18_knrjx"]
+[ext_resource type="Texture2D" uid="uid://bgj0k5c3t6mnu" path="res://Art/Materials/rock036_packed_albedo_height.png" id="19_ejhxt"]
+[ext_resource type="Texture2D" uid="uid://dcvi488kx764w" path="res://Art/Materials/rock036_packed_normal_roughness.png" id="20_rt3p7"]
+[ext_resource type="Texture2D" uid="uid://gyd6nl00e87w" path="res://Art/Materials/rock047_packed_albedo_height.png" id="21_tokkb"]
+[ext_resource type="Texture2D" uid="uid://cc50lr4bjml8j" path="res://Art/Materials/rock047_packed_normal_roughness.png" id="22_3qj7o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kbxxf"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 128.0
+distance_fade_max_distance = 96.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_dcted"]
+generated_type = 1
+height_offset = 0.5
+material_override = SubResource("StandardMaterial3D_kbxxf")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_qg882"]
+name = "DarkSand"
+albedo_texture = ExtResource("1_kbxxf")
+normal_texture = ExtResource("2_dcted")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_m78mh"]
+name = "LightSand"
+id = 1
+albedo_texture = ExtResource("3_yjccd")
+normal_texture = ExtResource("4_mibhk")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_7jeuw"]
+name = "BeachSand"
+id = 2
+albedo_texture = ExtResource("5_8qkr2")
+normal_texture = ExtResource("6_voyym")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_w3b2r"]
+name = "MossDirt"
+id = 3
+albedo_texture = ExtResource("7_chjpe")
+normal_texture = ExtResource("8_0dhbb")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_nsx2x"]
+name = "PockedSand"
+id = 4
+albedo_texture = ExtResource("9_ovkvm")
+normal_texture = ExtResource("10_31vta")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_fm0ec"]
+name = "RoughSand"
+id = 5
+albedo_texture = ExtResource("11_ss82l")
+normal_texture = ExtResource("12_h6y1q")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_0bpqg"]
+name = "PackedSand"
+id = 6
+albedo_texture = ExtResource("13_576p4")
+normal_texture = ExtResource("14_airtd")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_yw658"]
+name = "RedRock"
+id = 7
+albedo_texture = ExtResource("15_hnw8y")
+normal_texture = ExtResource("16_1mw5l")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_r67lp"]
+name = "BlackRock"
+id = 8
+albedo_texture = ExtResource("17_gwui1")
+normal_texture = ExtResource("18_knrjx")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_754cq"]
+name = "GreenRock"
+id = 9
+albedo_texture = ExtResource("19_ejhxt")
+normal_texture = ExtResource("20_rt3p7")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_ocw46"]
+name = "GrayRock"
+id = 10
+albedo_texture = ExtResource("21_tokkb")
+normal_texture = ExtResource("22_3qj7o")
+
+[resource]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_dcted")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_qg882"), SubResource("Terrain3DTextureAsset_m78mh"), SubResource("Terrain3DTextureAsset_7jeuw"), SubResource("Terrain3DTextureAsset_w3b2r"), SubResource("Terrain3DTextureAsset_nsx2x"), SubResource("Terrain3DTextureAsset_fm0ec"), SubResource("Terrain3DTextureAsset_0bpqg"), SubResource("Terrain3DTextureAsset_yw658"), SubResource("Terrain3DTextureAsset_r67lp"), SubResource("Terrain3DTextureAsset_754cq"), SubResource("Terrain3DTextureAsset_ocw46")])

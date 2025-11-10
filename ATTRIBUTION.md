@@ -51,6 +51,18 @@
 - **Usage:** Weather controller nodes, resources, and sample content
 - **Source:** https://github.com/matiaslavik/GodotWeatherSystem
 
+**Terrain3D**
+- **Author:** Cory Petkovsek (Tokisan Games) & Roope Palmroos (Outobugi Games)
+- **License:** MIT License
+- **Usage:** Editable terrain system providing GDExtension-backed terrain meshes, LOD, and sculpting workflows
+- **Source:** https://github.com/TokisanGames/Terrain3D
+
+**AmbientCG Materials**
+- **Author:** AmbientCG (community contributors)
+- **License:** Creative Commons 0 (CC0)
+- **Usage:** Surface textures in `Resources/Materials` (`Ground048`, `Ground054`, `Ground055S`, `Ground068`, `Ground080`, `Ground092B`, `Ground096C`, `Rock029`, `Rock032`, `Rock036`, `Rock047`)
+- **Source:** https://ambientcg.com/
+
 ---
 
 ## License Notes
@@ -63,5 +75,5 @@
 
 *This document will be updated as additional assets are added to the project.*
 
-**Last Updated:** November 2025 (Weather system now replaces previous day/night addon)
+**Last Updated:** November 2025 (Terrain3D + AmbientCG materials added)
 
